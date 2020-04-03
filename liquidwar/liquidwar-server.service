@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Liquid War server
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/home/pi/rpi-games/liquidwar/run-liquidwar.sh
+
+[Install]
+WantedBy=multi-user.target
