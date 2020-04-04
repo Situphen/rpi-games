@@ -38,7 +38,7 @@ sudo apt update
 ./install.sh --update
 ```
 
-Use `./game}/install-{game}.sh` to update only one game.
+Use `./{game}/install-{game}.sh` to update only one game.
 
 ### How to start, stop or restart a game?
 
