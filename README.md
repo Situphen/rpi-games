@@ -31,7 +31,7 @@ cd rpi-games
 
 Use `./{game}/install-{game}.sh` to install only one game.
 
-### How to update those games?
+### Updating
 
 ```
 sudo apt update
@@ -40,13 +40,13 @@ sudo apt update
 
 Use `./{game}/install-{game}.sh` to update only one game.
 
-### How to start, stop or restart a game?
+### Game servers management
 
 ```sh
 sudo systemctl {start, stop or restart} {game}-server.service
 ```
 
-## How to customize the server name, description, port or password?
+## Configuring
 
 You can customize this variables for all games in `configuration.sh` or a specific game in `{game}/configuration.sh`.
 
