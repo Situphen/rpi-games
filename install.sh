@@ -25,6 +25,9 @@ do
             else
                 print_info "Installing $game"
             fi
+        else
+            print_error "Unknown option $1."
+            exit 1
         fi
  
         ./$game/install-$game.sh
