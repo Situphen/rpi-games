@@ -20,7 +20,7 @@ We assume that you use the default `pi` user.
 
 Just write...
 
-```
+```sh
 sudo apt install git
 git clone https://github.com/Situphen/rpi-games.git
 cd rpi-games
@@ -42,7 +42,7 @@ Use `./game}/install-{game}.sh` to update only one game.
 
 ### How to start, stop or restart a game?
 
-```
+```sh
 sudo systemctl {start, stop or restart} {game}-server.service
 ```
 
@@ -64,7 +64,7 @@ If you use Raspbian, you can upgrade to a newer release or even to `testing` (be
 
 Update `/etc/apt/sources.list`:
 
-```
+```sh
 deb http://mirrordirector.raspbian.org/raspbian/ {release} main contrib non-free rpi
 # Uncomment line below then 'apt-get update' to enable 'apt-get source'
 #deb-src http://mirrordirector.raspbian.org/raspbian/ {release} main contrib non-free rpi
