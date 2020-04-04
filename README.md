@@ -20,7 +20,7 @@ We assume that you use the default `pi` user.
 
 Just write...
 
-```
+```sh
 sudo apt install git
 git clone https://github.com/Situphen/rpi-games.git
 cd rpi-games
@@ -31,24 +31,24 @@ cd rpi-games
 
 Use `./{game}/install-{game}.sh` to install only one game.
 
-### How to update those games?
+### Updating
 
 ```
 sudo apt update
 ./install.sh --update
 ```
 
-Use `./game}/install-{game}.sh` to update only one game.
+Use `./{game}/install-{game}.sh` to update only one game.
 
-### How to start, stop or restart a game?
+### Game servers management
 
-```
+```sh
 sudo systemctl {start, stop or restart} {game}-server.service
 ```
 
-## How to customize the server name, description, port or password?
+## Configuring
 
-You can customize this variables for all games in `configuration.sh` or a specific game in `{game}/configuration.sh`.
+You can customize this variables for all games in `configuration.sh` or for a specific one in `{game}/configuration.sh`.
 
 Default configuration is:
 
@@ -64,7 +64,7 @@ If you use Raspbian, you can upgrade to a newer release or even to `testing` (be
 
 Update `/etc/apt/sources.list`:
 
-```
+```sh
 deb http://mirrordirector.raspbian.org/raspbian/ {release} main contrib non-free rpi
 # Uncomment line below then 'apt-get update' to enable 'apt-get source'
 #deb-src http://mirrordirector.raspbian.org/raspbian/ {release} main contrib non-free rpi
