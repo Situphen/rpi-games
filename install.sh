@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# change to the directory of this script (usefull when called from elsewhere like ./rpi-games/install.sh)
 cd $(dirname "$0")
 
 source ./_utils.sh
