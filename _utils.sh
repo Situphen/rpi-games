@@ -8,6 +8,6 @@ function print_info {
 
 function print_error {
     echo -en "\033[31;1m"
-    echo "$1"
+    echo "$1" 1>&2
     echo -en "\033[00m"
 }
