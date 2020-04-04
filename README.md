@@ -29,7 +29,7 @@ cd rpi-games
 
 ... and it's done!
 
-Use `./{game}/install-{game}.sh` to install only one game.
+Use `./{game}/install.sh` to install only one game.
 
 ### Updating
 
@@ -38,7 +38,7 @@ sudo apt update
 ./install.sh --update
 ```
 
-Use `./{game}/install-{game}.sh` to update only one game.
+Use `./{game}/install.sh` to update only one game.
 
 ### Game servers management
 

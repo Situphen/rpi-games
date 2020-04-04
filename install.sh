@@ -32,6 +32,6 @@ do
             exit 1
         fi
  
-        ./$game/install-$game.sh
+        ./$game/install.sh
     fi
 done
