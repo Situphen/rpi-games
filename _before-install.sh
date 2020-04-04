@@ -14,14 +14,18 @@ then
     source ./configuration.sh
 fi
 
-for file in ./templates/*
+cd ./templates/
+for file in *
 do
-    cp $file .
+    cp $file $file.copy
 
-    sed -i "s/SERVER_NAME/$SERVER_NAME/g" $file
-    sed -i "s/SERVER_DESCRIPTION/$SERVER_DESCRIPTION/g" $file
-    sed -i "s/SERVER_PASSWORD/$SERVER_PASSWORD/g" $file
-    sed -i "s/SERVER_PORT/$SERVER_PORT/g" $file
+    sed -i "s/SERVER_NAME/$SERVER_NAME/g" $file.copy
+    sed -i "s/SERVER_DESCRIPTION/$SERVER_DESCRIPTION/g" $file.copy
+    sed -i "s/SERVER_PASSWORD/$SERVER_PASSWORD/g" $file.copy
+    sed -i "s/SERVER_PORT/$SERVER_PORT/g" $file.copy
+    
+    mv $file.copy ../$file
 done
+cd ..
 
 touch ./installed
