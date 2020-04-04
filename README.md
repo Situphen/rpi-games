@@ -48,7 +48,7 @@ sudo systemctl {start, stop or restart} {game}-server.service
 
 ## Configuring
 
-You can customize this variables for all games in `configuration.sh` or a specific game in `{game}/configuration.sh`.
+You can customize this variables for all games in `configuration.sh` or for a specific one in `{game}/configuration.sh`.
 
 Default configuration is:
 
