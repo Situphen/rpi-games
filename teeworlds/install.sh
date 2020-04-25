@@ -14,8 +14,10 @@ then
     mkdir /home/pi/.local/share/teeworlds/
 fi
 
-ln -s /home/pi/rpi-games/teeworlds/teeworlds-config.conf teeworlds.conf
-mv teeworlds.conf /home/pi/.local/share/teeworlds/
+ln -s /home/pi/rpi-games/teeworlds/teeworlds-config-ctf.conf teeworlds-ctf.conf
+mv teeworlds-ctf.conf /home/pi/.local/share/teeworlds/
+ln -s /home/pi/rpi-games/teeworlds/teeworlds-config-dm.conf teeworlds-dm.conf
+mv teeworlds-dm.conf /home/pi/.local/share/teeworlds/
 
 sudo cp teeworlds-server.service /lib/systemd/system/
 sudo systemctl enable teeworlds-server.service

@@ -1,1 +1,3 @@
-teeworlds-config.conf
+teeworlds-config-ctf.conf
+teeworlds-config-dm.conf
+!templates/*
